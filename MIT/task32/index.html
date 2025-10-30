@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Task32 — Promise.allSettled demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Task32 — Promise.allSettled (порядок завершення)</h1>
+    <p>Натисніть кнопку, щоб запустити три асинхронні завдання з різними затримками. Результати будуть виведені в порядку завершення за допомогою <code>Promise.allSettled</code>.</p>
+    <div style="display:flex;gap:.5rem;align-items:center;margin-bottom:1rem">
+      <button id="runBtn">Запустити</button>
+      <span id="status" class="meta"></span>
+    </div>
+
+    <h3>Історія подій (у порядку завершення)</h3>
+    <ol id="log"></ol>
+
+    <h3>Всі результати (після allSettled)</h3>
+    <pre id="results">(поки нічого)</pre>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

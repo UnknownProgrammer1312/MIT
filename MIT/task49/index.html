@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Генератор тексту (жарти / цитати)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p>Створення генератора тексту на основі API:
+    Напишіть функцію, що звертається до публічного API для отримання цитат або жартів,
+    і відображає їх на сторінці при натисканні кнопки.</p>
+    <p>https://github.com/public-apis/public-apis?tab=readme-ov-file</p>
+    <div class="card">
+        
+        <h1>Генератор тексту (жарт або цитата)</h1>
+
+        <div class="controls">
+            <label for="type" class="small">Тип:</label>
+            <select id="type" aria-label="Тип повідомлення">
+                <option value="joke">Жарт</option>
+                <option value="quote">Цитата</option>
+            </select>
+
+            <button id="fetchBtn">Отримати</button>
+            <span id="loader" class="small" style="margin-left:.5rem; display:none;">Завантаження…</span>
+        </div>
+
+        <div id="output" class="output" aria-live="polite">Натисніть «Отримати», щоб побачити жарт або цитату.</div>
+        <div id="author" class="meta"></div>
+        <div id="error" class="error"></div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

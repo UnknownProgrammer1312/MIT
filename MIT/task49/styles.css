@@ -1,0 +1,16 @@
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; padding: 2rem; background:#f7f9fc; color:#111; }
+.card { max-width:720px; margin:0 auto; background:#fff; border-radius:10px; padding:1.5rem; box-shadow:0 6px 18px rgba(18,38,63,0.08);  }
+h1 { margin:0 0 1rem; font-size:1.25rem; }
+.controls { display:flex; gap:.5rem; margin-bottom:1rem; align-items:center; }
+select, button { padding:.5rem .75rem; font-size:1rem; border-radius:6px; border:1px solid #d0d7e3; background:#fff; }
+button[disabled]{ opacity:.6; cursor:not-allowed; }
+.output { min-height:96px; padding:1rem; border-radius:8px; background:#f3f6fb; border:1px dashed #e1e7f2; margin-bottom:.5rem; white-space:pre-wrap; }
+.meta { color:#52607a; font-size:.9rem; }
+.error { color:#b00020; }
+.small { font-size:.85rem; color:#6b7480; }
+
+/* Невеликі адаптивні налаштування */
+@media (max-width:520px){
+  body{ padding:1rem; }
+  .controls{ flex-direction:column; align-items:stretch; }
+}

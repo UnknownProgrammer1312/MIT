@@ -1,0 +1,5 @@
+body{font-family:system-ui,Segoe UI,Roboto,Arial;padding:2rem;background:#f7f9fc}
+.card{max-width:720px;margin:0 auto;background:#fff;padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+button{padding:.5rem 1rem;border-radius:6px;border:1px solid #ccc;background:#f5f7fb}
+pre{background:#f3f6fb;padding:1rem;border-radius:6px;white-space:pre-wrap}
+.meta{color:#556}
