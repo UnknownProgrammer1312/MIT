@@ -36,8 +36,9 @@ async function fetchFromAPI(kind) {
       // Фолбек: спробуємо взяти великий JSON із репозиторію quotable на GitHub
       try {
         if (!quotesCache) {
-          const rawUrl = 'https://raw.githubusercontent.com/lukePeavey/quotable/master/data/quotes.json';
+          const rawUrl = 'https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en';
           const res2 = await fetch(rawUrl);
+          console.log(res2);
           if (!res2.ok) throw new Error('Не вдалося завантажити quotes.json з GitHub');
           const all = await res2.json();
           // Розуміємо, що формат — масив об'єктів {content, author, ...}

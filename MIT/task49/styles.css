@@ -8,7 +8,7 @@ button[disabled]{ opacity:.6; cursor:not-allowed; }
 .meta { color:#52607a; font-size:.9rem; }
 .error { color:#b00020; }
 .small { font-size:.85rem; color:#6b7480; }
-
+.Task49 {font-size:.85rem; color:#6b7480; margin-bottom:1rem; }
 /* Невеликі адаптивні налаштування */
 @media (max-width:520px){
   body{ padding:1rem; }
