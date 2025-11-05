@@ -1,0 +1,109 @@
+/* Загальні стилі сторінки */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Контейнер */
+.container {
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 420px;
+  width: 90%;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Заголовок */
+h1 {
+  color: #2b5fe0;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Пояснення */
+p {
+  color: #444;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Блок з інпутом і кнопкою */
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+/* Поле вводу */
+input {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2b5fe0;
+  box-shadow: 0 0 6px rgba(43, 95, 224, 0.3);
+}
+
+/* Кнопка */
+button {
+  background: #2b5fe0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.15s ease;
+}
+
+button:hover {
+  background: #1f4cc2;
+  transform: scale(1.03);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Результат */
+#result {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  min-height: 28px;
+}
+
+#result.success {
+  color: #1c9a3a;
+}
+
+#result.error {
+  color: #e63946;
+}
+
+/* Анімація появи */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

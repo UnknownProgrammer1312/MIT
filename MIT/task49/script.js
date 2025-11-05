@@ -36,13 +36,11 @@ async function fetchAndShow() {
     authorEl.textContent = result.author ? `— ${result.author}` : '';
   } catch (err) {
     console.warn('API помилка', err);
-    // Жарти відображаються тільки через API — при помилці показуємо повідомлення
     if (kind === 'joke') {
       errorEl.textContent = 'Не вдалося отримати жарт з API. Спробуйте пізніше.';
       output.textContent = '';
       authorEl.textContent = '';
     } else {
-      // Для цитат теж показуємо повідомлення про помилку
       errorEl.textContent = 'Не вдалося отримати цитату з API. Спробуйте пізніше.';
       output.textContent = '';
       authorEl.textContent = '';
