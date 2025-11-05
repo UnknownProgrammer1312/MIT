@@ -15,7 +15,6 @@ function validateEmail() {
   const message = document.getElementById("message");
   const forbiddenChars = /[(),:;<>[\]\s]/;
   const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
-const aaa = new RegExp("ilarion");
   if (forbiddenChars.test(email)) {
     message.textContent = "❌ Заборонені символи у e-mail!";
     message.style.color = "red";
